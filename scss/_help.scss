@@ -1,0 +1,244 @@
+.helpPage {
+    width: 100%;
+    height: auto;
+    min-height: 565px;
+    padding-bottom: 42px;
+
+    .center {
+        width: 1400px;
+        margin: 0 auto;
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        
+        .nav {
+            width: 390px;
+            height: auto;
+            border-radius: 5px;
+            padding: 10px 0 13px;
+            
+            &>li {
+                width: 100%;
+                height: auto;
+                background: $mainBG_1;
+
+                &:nth-of-type(odd) {
+                    margin-bottom: 15px;
+                }
+                
+                &.title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 26px;
+                    margin-bottom: 15px;
+                    height: 60px;
+                    box-sizing: border-box;
+                    border: 1px solid $mainBorder_3;
+                    box-shadow: inset 0 -5px 10px -5px $mainShadow_1;
+                    cursor: pointer;
+                   
+    
+                    &:hover,&:active {
+                        margin-bottom: 15px;
+
+                        .arrow_ic {
+                            transform: rotate(270deg);
+                        }
+                    }
+    
+                    &.active {
+                        margin-bottom: 0;
+    
+                        .arrow_ic {
+                            transform: rotate(270deg);
+                        }
+                    }
+    
+                    p {
+                        display: flex;
+                        align-items: center;
+                        color: $mainFont_1;
+                        font-size: 22px;
+                        font-weight: bold;
+    
+                        i {
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 23px;
+    
+                            &.bulb {
+                                height: 24px;
+                            }
+
+                            &.aboutUs {
+                                width: 17px;
+                                height: 23px;
+                                margin-right: 26px;
+                            }
+                        }
+                    }
+    
+                    .arrow_ic {
+                        width: 8px;
+                        height: 16px;
+                        transition: 0.3s all;
+                        transform: rotate(180deg);
+                        margin-right: 23px;
+                    }
+                }
+
+                &.box {
+                    display: none;
+                    margin-bottom: 15px;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    ul {
+                        width: 100%;
+                        height: auto;
+                        border: 1px solid $mainBorder_3;
+                        border-top: transparent;
+                        
+                        li {
+                            width: 100%;
+                            height: 45px;
+                            box-sizing: border-box;
+                            padding-left: 72px;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: $mainFont_1;
+                            border-bottom: 1px solid $mainBorder_1;
+    
+                            &:hover,&:active,&.active {
+                                @include navHover;
+                                color: $mainFont_2;
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .helpWrap {
+            width: 980px;
+            height: auto;
+            background: $mainBG_3;
+            box-shadow: 0px 5px 10px -5px $mainShadow_1;
+            border: 1px solid $mainBorder_3;
+            margin-bottom: 40px;
+            box-sizing: border-box;
+            padding: 44px 58px;
+
+            div {
+                display: none;
+
+                &.display {
+                    display: block;
+                }
+
+                h2 {
+                    margin: 55px 0 35px;
+                    color: $title_2;
+                    font-size: 22px;
+                    font-weight: bold;
+
+                    &:nth-of-type(1) {
+                        margin-top: 0;
+                    }
+                }
+                
+                h3 {
+                    color: $title_2;
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin-bottom: 13px;
+                }
+
+                p {
+                    margin-bottom: 23px;
+                    color: $mainFont_1;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    &.remind {
+                        color: $remind;
+                        font-weight: bold;
+
+                        &.mar {
+                            margin-top: 75px;
+                        }
+                    }
+
+                    &.haveBtn {
+                        font-size: 20px;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+
+                        button {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+                a {
+                    color: $link;
+                    text-decoration: none;
+                }
+
+                button {
+                    width: 216px;
+                    height: 42px;
+                    @include main_longBtn;
+                    padding: 0 10px;
+                }
+
+                .img {
+                    display: block;
+
+                    &.online01 {
+                        width: 860px;
+                        height: 736px;
+                    }
+
+                    &.online02 {
+                        width: 862px;
+                        height: 749px;
+                        margin-bottom: 20px;
+                    }
+
+                    &.online03 {
+                        width: 862px;
+                        height: 957px;
+                    }
+
+                    &.online04 {
+                        width: 187px;
+                        height: 144px;
+                    }
+
+                    &.online05 {
+                        width: 275px;
+                        height: 379px;
+                        margin: 10px 0 20px 55px;
+                    }
+                }
+            }
+        }
+    }
+}

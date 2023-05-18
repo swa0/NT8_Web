@@ -1,0 +1,776 @@
+//主背景色
+$mainBG_1: #ffffff;
+$mainBG_2: #f4f4f4;
+$mainBG_3: linear-gradient(to top, #f3eddd 6%, #fffffe 100%);
+
+//主border
+$mainBorder_1: #A9B0AF;
+$mainBorder_2: #c29f64;
+$mainBorder_3: #4a4de6;
+
+//主字色
+$mainFont_1: #3a4644;
+$mainFont_2: #ffffff;
+$mainFont_3: #000000;
+
+//提醒字色
+$remind: #f81041;
+$remind_sp: #4ec500;
+$remind_sp2: #008599;
+
+//陰影色
+$mainShadow_1: #00000066;
+
+//選擇色
+$choose_Word: #4d4d4d;
+$choose_Active: #4a4de6;
+$choose_Border: #4a4de6;
+
+//標題色
+$title_1: #996c33;
+$title_2: #3d43c6;
+$title_3: #666666;
+$title_4: #35a4e9;
+$title_Time: #999999;
+
+//金錢色
+$money: #000000;
+
+//連結色
+$link: #177af4;
+
+//背景半透明黑
+$filter: #0000009e;
+
+//彈窗標頭色
+$jumpWindow_BG: linear-gradient(to right,#fffffe 0%,#f3eddd 26%, #fffffe 74% ,#f3eddd 100%);
+$jumpWindow_Header: linear-gradient(to top,#3c8cef 0%,#35a4e9 96%);
+
+//帳號低中高強度
+$low: #e11515;
+$middle: #ff8d68;
+$high: #00a99d;
+//帳號認證與未認證圖示背景
+$noCheck: #cccccc;
+$check: #05b900;
+
+//左選擇列hover樣式
+@mixin navHover {
+    background: linear-gradient(90deg,#4a4de6 0%,#5161e8 100%);
+}
+
+//lv樣式
+@mixin level {
+    background: #35a4e9;
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+//level升級條樣式
+@mixin levelBar {
+    background: #e6e6e6;
+    border-radius: 10px;
+    overflow: hidden;
+
+    li {
+        background: linear-gradient(90deg,#3c8cef 0%,#35a4e9 100%);
+        height: 100%;
+        border-radius: 10px;
+    }   
+}
+
+//header色
+$header_BG: linear-gradient(to top,#3d43c6 0%,#5161e8 100%);
+$header_Border: #9ca6ff;
+@mixin headerInput {
+    background: #ffffff;
+    border: solid 1px #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px 1px #00000080 inset;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+
+    &::placeholder {
+        color: #8f909b;   
+    }
+}
+@mixin headerBtn_1 {
+    background: linear-gradient(to top,#ff9a22 0%,#f5cf35 100%);
+    border: solid 1px transparent;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+
+    &:hover,&:active,&.active {
+        background: #ff9a22;
+        border-color: #ffffff;
+    }
+}
+@mixin headerBtn_2 {
+    background: linear-gradient(to top,#3c8cef 0%,#35a4e9 96%);
+    border: solid 1px transparent;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#2979db 0%,#3c8cef 100%);
+        border-color: #ffffff;
+    }
+}
+@mixin headerBtn_3 {
+    background: linear-gradient(to top,#d7d7d7 0%,#ffffff 74%);
+    border-radius: 3px;
+    border: solid 1px transparent;
+    color: #3a4644;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+
+    &:hover,&:active,&.active {
+        background: #2c30bb;
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+}
+$header_forget_Color: #fff715;
+@mixin headerLang {
+    padding: 0 20px 2px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#232fa3 0%,#4454dd 100%);
+    }
+    
+    select {
+        width: auto;
+        height: auto;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+
+        option {
+            background: #ffffff;
+            color: #333333;
+        }
+    }
+}
+$headerNav_Border: #3c8def;
+@mixin headerLevel {
+    background: #35a4e9;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+@mixin headerMoneyList {
+    color: #fff715;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding-right: 20px;
+    z-index: 100;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 4px 0 4px;
+        border-color: #fff715 transparent;
+    }
+
+    ul {
+        display: none;
+        width: auto;
+        height: auto;
+        background: #ccc;
+        position: absolute;
+        left: 0;
+        top: 27px;
+        cursor: default;
+
+        &.display {
+            display: block;
+        }
+
+        li {
+            width: 230px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+//ad
+$ad_arrow_baseBG: #9e9eaf;
+$ad_arrow_baseActiveBG: #ffffff;
+$ad_arrow_BG: #676778;
+$ad_arrow_ActiveBG: #4954da;
+$ad_dot_BG: #86869c;
+$ad_dot_ActiveBG: #34b1ff;
+
+//sideBar
+$sideBar_BG: linear-gradient(to top,#3c8cef 0%,#35a4e9 100%);
+
+//marquee
+@mixin marquee {
+    background: #ffffff;
+    border: solid 1px #4e59e7;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+$marquee_BG: #ffffff;
+$marquee_Word: #4d4d4d;
+$marquee_Border: #e5f4ff;
+$marquee_Shadow: #ede4d6;
+$marquee_Linear: linear-gradient(to top,#fae0af 0%,#d7b676 50%,#f8fbc0 100%);
+$marquee_LinearWord: #ffffff;
+
+//typeList
+@mixin typeBtn {
+    background: #ffffff;
+    border: solid 1px #4954da;
+    border-radius: 8px;
+    box-shadow: 0 -2px 5px 0 #00000034 inset;
+    color: #3a4644;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: #5160e8;
+        border-color: #5160e8;
+        color: #ffffff;
+    }
+}
+@mixin partnerBox {
+    display: none;
+    background: #ffffff;
+    border-radius: 8px;
+    border: solid 1px #838383;
+    box-shadow: 0 -2px 5px 0 #00000034 inset;
+    padding: 0 15px;
+
+    &.display {
+        display: block;
+    }
+
+    ul {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+
+        li {
+            width: auto;
+            height: 80px;
+            border-bottom: solid 1px #a0a0a0;
+            position: relative;
+            padding: 5px;
+
+            &:nth-of-type(7n) {
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &:nth-of-type(n + 8) {
+                border: none;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                width: 1px;
+                height: 40px;
+                background: #a0a0a0;
+            }
+
+            div:not(.partnerImg) {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                &:hover,&:active,&.active {
+                    background: #5161e8;
+                }
+            }
+        }
+    }
+}
+
+//innerPage
+$top_BG: linear-gradient(140deg, #fcfaf0 0%, #f4ebd5 17%, #fcfaf0 39%, #fcfaf0 78%, #eae1cc 100%);
+$tableBox_BG: #f0e8d4;
+$maintainTableTr_BG: linear-gradient(90deg, #f7ebd6 0%, #fcfaf0 18%, #fffef7 55%, #f7ebd6 74%, #fef1d2 86%, #fcfaf0 100%);
+$wordWrapTotal_BG: #d7d8ea;
+
+//eventWrap
+$eventBox_BG: linear-gradient(to right, #f3eddd 6%, #fffffe 100%);
+
+//gameWrap
+$decoCircle_BG: linear-gradient(to bottom, #4a4de6 0%, #5161e8 86%);
+
+//footer
+@mixin footerBtn {
+    background: transparent;
+    border-bottom: solid 2px transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#2a2e7a 17%,#5161e8 100%);
+        border-color: #ffffff;
+    }
+}
+$footer_copyright_Color: #bbc0ff;
+
+//gameWrap大title字漸層
+$gameWrap_Linear: linear-gradient(360deg,#4a4de6 60%,#35a4e9 100%);
+
+//vipCard字樣式
+@mixin cardWord {
+    color: #ffffff;
+    text-shadow: 1px 2px 3px #000000;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+//bankCard樣式
+@mixin bankCard {
+    background: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+    border: solid 1px #ffffff;
+    padding: 15px 17px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 2px #dedede;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    &.empty {
+        background: linear-gradient(120deg,#e8ebf2 0%,#cbcdd3 30%);
+        border: none;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+
+        .text {
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+
+    .name {
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .branch {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .account {
+
+        span {
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+
+    .review {
+        letter-spacing: 1px;
+        background: #ffffff;
+        color: #cfa678;
+        border-radius: 0 0 5px 5px;
+        padding: 2px 0;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+//mail
+@mixin mailCheckbox {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #ffffff;
+        border-radius: 50%;
+        border: solid 1px #cccccc;
+    }
+
+    &:checked {
+        
+        &::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #996c33;
+            border-radius: 50px;
+            z-index: 2;
+        }
+    }
+}
+@mixin read {
+    background: #f5f5f5;
+    
+    span {
+        color: #999999;
+    }
+}
+
+
+//button
+
+
+//最常用按鈕
+@mixin mainBtn {
+    background: linear-gradient(to top,#ff9a22 0%,#f5cf35 100%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
+
+    &:hover,&:active,&.active {
+        background: #ff9a22;
+        border: 1px solid #ffffff;
+    }
+}
+@mixin main_longBtn {
+    background: linear-gradient(to top,#eccf89 12%,#d3b26c 33%, #fff1bb 79%, #e2c47d 100%);
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    border: 1px solid #957632;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#eccf89 0%, #c1a15b 100%);
+        color: #ffffff;
+    }
+}
+//遊戲快速轉帳彈窗按鈕
+@mixin fastBtn {
+    background: linear-gradient(to bottom,#ffffff 40%,#f4f4f4 100%);
+    border: solid 1px #4a4de6;
+    color: #4a4de6;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    
+    &:hover,&:active,&.active {
+        background: #4a4de6;
+        color: #ffffff;
+        border-color: #4a4de6;
+    }
+}
+//邊框線按鈕
+@mixin borderBtn {
+    background: transparent;
+    border: solid 1px #c09a41;
+    color: #c09a41;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover,&:active,&.active {
+        background: #c09a41;
+        color: #ffffff;
+    }
+}
+//邊框線按鈕異色_優惠申請
+@mixin eventBtn {
+    background: #ffffff;
+    border: solid 1px #008599;
+    color: #008599;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover,&:active,&.active {
+        background: #008599;
+        color: #ffffff;
+    }
+}
+//邊框線按鈕異色_站內信
+@mixin mailBtn_1 {
+    background: linear-gradient(to top,#bf2424 0%, #e04c2f 100%);
+    border: solid 1px #e11515;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#99101d 0%, #ce2518 100%);
+        border-color: #ffffff;
+    }
+}
+@mixin mailBtn_2 {
+    background: linear-gradient(to bottom, #28b54d 0%, #59d130 100%);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: solid 1px transparent;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top, #1bab25 0%, #149536 100%);
+        border-color: #ffffff;
+    }
+}
+//邊框線按鈕異色_存款
+@mixin depositBtn {
+    background: #ffffff;
+    border: solid 1px #4a4de6;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to right, #4a4de6 0%, #5161e8 86%);
+        color: #ffffff;
+        border-color: transparent;
+    }
+}
+//slot頁按鈕
+@mixin slotBtn_1 {
+    background: linear-gradient(to top, #801c1c 0%, #f13945 100%);
+    border: solid 1px #f56d5c;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &:hover,&:active,&.active {
+        background: #5a0c0c;
+    }
+}
+@mixin slotBtn_2 {
+    background: linear-gradient(to top, #324ab9 0%, #6a91f3 100%);
+    border: solid 1px #5c8df5;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &:hover,&:active,&.active {
+        background: #0e1c5e;
+    }
+}
+//優惠申請按鈕
+@mixin eventApply {
+    background: linear-gradient(to top,#3c8cef 0%,#35a4e9 96%);
+    border-radius: 3px;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#2979db 0%,#3c8cef 100%);
+        border-color: #ffffff;
+    }
+}
+//灰漸層按鈕
+@mixin normalBtn {
+    background: linear-gradient(to bottom,#ffffff 40%,#f4f4f4 100%);
+    border: solid 1px #cccccc;
+    border-radius: 3px;
+    color: #c69c6d;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#ffffff 40%,#f4f4f4 100%);
+    }
+}
+//灰漸層+不同hover效果按鈕
+@mixin changeBtn {
+    background: linear-gradient(to bottom,#ffffff 40%,#f4f4f4 100%);
+    border: solid 1px #4f5be7;
+    border-radius: 3px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #4f5be7;
+        border-color: #4f5be7;
+        color: #ffffff;
+    }
+}
+//內頁左列快速選擇轉存提按鈕
+@mixin quick {
+    background: linear-gradient(to top, #4a4de6 0%, #5161e8 86%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(0deg, #4a4de6 0%, #292cb2 100%);
+    }
+}
+//大紫頁籤按鈕
+@mixin purpleBtn {
+    background: linear-gradient(to bottom, #4a4de6 0%, #5161e8 86%);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: #ffffff;
+        color: $mainFont_1;
+        border: 1px solid $mainBorder_3;
+        border-bottom: none;
+
+        &::before {
+            background: #ffffff;
+        }
+    }
+}
+
+button:disabled {
+    background: #ccc!important;
+    border: none!important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+}
+
+
+//input
+
+
+//最常用input
+@mixin mainInput {
+    background: #ffffff;
+    border: solid 1px #889895;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 20px;
+
+    &::placeholder {
+        color: #848484;
+    }
+
+    &:disabled {
+        background: #e7e7e7;
+    }
+}
+
+input:read-only {
+    background: #e7e7e7 !important;
+    border-color: #889895 !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    pointer-events: none !important;
+}
+
+
+//select
+
+
+@mixin mainSelect {
+    border-radius: 3px;
+    border: solid 1px #cccccc;
+    background-color: #ffffff;
+    padding-left: 16px;
+    background-image: linear-gradient(45deg,transparent 50%,#c29f64 0),linear-gradient(135deg,#c29f64 50%,transparent 0);
+    background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px,5px 5px;
+    background-repeat: no-repeat;
+    appearance: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+
+    option {
+        background: #ffffff;
+        color: #000000;
+    }
+}
+
+//textHide
+@mixin textHide {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

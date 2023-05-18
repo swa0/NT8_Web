@@ -1,0 +1,87 @@
+footer {
+    width: 100%;
+    height: auto;
+
+    //上部
+    .top {
+        width: 100%;
+        height: 55px;
+        background: $header_BG;
+
+        .center {
+            width: 1400px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .btnBox {
+                width: auto;
+                height: 100%;
+
+                ul {
+                    display: flex;
+                    width: auto;
+                    height: 100%;
+
+                    li {
+                        width: 95px;
+                        height: 100%;
+                        @include footerBtn;
+                        margin-right: 8px;
+
+                        &:hover,&:active,&.active {
+
+                            i {
+                                display: block;
+                            }
+                        }
+
+                        i {
+                            display: none;
+                            width: 5px;
+                            height: 5px;
+                            background: $mainFont_2;
+                            transform: rotate(45deg);
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: $footer_copyright_Color;
+                font-size: 14px;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    //下部
+    .footerList {
+        width: 100%;
+        height: 160px;
+
+        .center {
+            width: 1400px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+
+            p {
+                color: $mainFont_2;
+                font-size: 14px;
+                font-weight: bold;
+
+                &:last-child {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

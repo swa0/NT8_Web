@@ -1,0 +1,240 @@
+.eventWrap {
+
+    .eventTitle {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    
+        p {
+            font-size: 61px;
+            color: $mainFont_2;
+            font-weight: bold;
+            position: absolute;
+            left: 60%;
+
+            span {
+                width: 145px;
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                left: -180px;
+                transform: translateY(-50%);
+
+                &:last-child {
+                    left: unset;
+                    right: -180px;
+                    transform: scaleX(-1) translateY(-50%);
+                }
+            }
+        }
+    }
+    
+    .eventBody {
+        width: 1400px;
+        height: auto;
+        min-height: 350px;
+        padding: 28px 0 56px;
+        margin: 0 auto;
+        display: flex;
+
+        .side {
+            width: 357px;
+            margin-right: 18px;
+            height: auto;
+            background: transparent;
+            
+
+            ul {
+                width: 100%;
+                height: auto;
+
+                li {
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    background: $mainBG_1;
+                    border: solid 1px $mainBorder_3;
+                    box-shadow: inset 0 -4px 10px -5px $mainShadow_1;
+                    margin-bottom: 10px;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:hover,&:active,&.active {
+                        @include navHover;
+
+                        i {
+                            filter: brightness(4);
+                        }
+
+                        span {
+                            color: $mainFont_2;
+                        }
+                    }
+
+                    i {
+                        display: block;
+                        width: 23px;
+                        height: 23px;
+                        margin: 0 28px;
+                    }
+
+                    span {
+                        font-weight: bold;
+                        font-size: 22px;
+                        color: $mainFont_1;
+                    }
+                }
+            }
+        }
+
+        .eventList {
+            // display: none;
+            width: 1024px;
+
+            // &.display {
+            //     display: block;
+            // }
+
+            .eventBox {
+                background: $eventBox_BG;
+                box-shadow: 0 5px 10px -5px $mainShadow_1;
+                margin-bottom: 20px;
+                overflow: hidden;
+                border: 1px solid $mainBorder_3;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                ul {
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    padding: 0 20px;
+
+                    .title {
+                        width: 72%;
+                        font-size: 24px;
+                        font-weight: bold;
+                        letter-spacing: 3px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: $mainFont_1;
+                    }
+
+                    .btnBox {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+
+                        &.twin {
+
+                            button {
+
+                                &:last-child {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        button {
+                            width: 117px;
+                            height: 37px;
+                            @include mainBtn;
+
+                            &:last-child {
+                                display: none;
+                                @include eventApply;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // .eventDetail {
+        //     display: none;
+        //     width: 1028px;
+        //     background: $mainBG_1;
+        //     box-shadow: 0px 5px 10px -5px $mainShadow_1;
+
+        //     &.display {
+        //         display: block;
+        //     }
+
+        //     .title {
+        //         padding: 22px 40px 18px;
+
+        //         p {
+        //             font-size: 34px;
+        //             font-weight: bold;
+        //             color: $title_2;
+        //         }
+
+        //         button {
+        //             width: 135px;
+        //             height: 36px;
+        //             margin-top: 18px;
+        //             @include normalBtn;
+
+        //             i {
+        //                 display: inline-block;
+        //                 width: 17px;
+        //                 height: 17px;
+        //                 margin: 0 10px -2px 0;
+        //             }
+        //         }
+        //     }
+
+        //     .info {
+        //         padding: 25px 40px;
+                
+        //         .infoTitle {
+        //             font-size: 26px;
+        //             font-weight: bold;
+        //             margin-bottom: 30px;
+        //             color: $title_1;
+        //         }
+
+        //         ul {
+        //             list-style: disc;
+        //             margin: 10px 0;
+
+        //             &.rule {
+        //                 margin-top: 30px;
+
+        //                 li {
+        //                     font-weight: bold;
+        //                 }
+        //             }
+
+        //             li {
+        //                 font-size: 16px;
+        //                 color: $mainFont_1;
+        //                 line-height: 20px;
+        //                 margin-bottom: 5px;
+
+        //                 &.remind {
+        //                     color: $remind;
+        //                 }
+        //             }
+        //         }
+        //     }
+
+        //     .detailFooter {
+        //         width: 100%;
+        //         height: 130px;
+        //         padding-bottom: 60px;
+        //     }
+        // }
+    }
+}

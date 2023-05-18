@@ -1,0 +1,221 @@
+.mainWrap {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+
+    .center {
+        width: 1400px;
+        height: auto;
+        margin: 0 auto;
+
+        //跑馬燈
+        .marqueeArea {
+            width: 100%;
+            height: 50px;
+            @include marquee;
+            margin: 12px 0;
+
+            .marquee_ic {
+                width: 38px;
+                height: 38px;
+                margin-left: 5px;
+                flex-shrink: 0;
+            }
+
+            .marquee {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+
+                p {
+                    display: inline-block;
+                    color: $mainFont_1;
+                    font-size: 14px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    animation: marquee 10s linear infinite;
+                    padding-left: 100%;
+                }
+
+                @keyframes marquee {
+                    0% {
+                        transform: translate(0%);
+                    }
+
+                    100% {
+                        transform: translate(-100%);
+                    }
+                }
+            }
+
+            .marquee_base {
+                width: 45px;
+                height: 42px;
+                border-radius: 0 12px 12px 0;
+                flex-shrink: 0;
+                margin-right: 5px;
+            }
+        }
+
+        //中間選單
+        .typeList {
+            width: 100%;
+            height: auto;
+            display: flex;
+
+            ol {
+                
+                &.left {
+                    width: 235px;
+                    height: auto;
+                    margin-right: 20px;
+                    flex-shrink: 0;
+
+                    li {
+                        width: 100%;
+                        height: 80px;
+                        @include typeBtn;
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        &:hover,&:active,&.active {
+                            
+                            i {
+                                filter: grayscale(1) brightness(10);
+                            }
+                        }
+
+                        i {
+                            width: 25px;
+                            height: 25px;
+                            margin: 0 20px -2px;
+
+                            &.hot {
+                                background-position-x: 0;
+                            }
+                            &.sport {
+                                background-position-x: 25%;
+                            }
+                            &.live {
+                                background-position-x: 37.5%;
+                            }
+                            &.lottery {
+                                background-position-x: 50%;
+                            }
+                            &.slot {
+                                background-position-x: 62.5%;
+                            }
+                            &.fish {
+                                background-position-x: 75%;
+                            }
+                            &.board {
+                                background-position-x: 87.5%;
+                            }
+                        }
+                    }
+                }
+
+                &.right {
+                    width: 100%;
+                    height: auto;
+
+                    &>li {
+                        width: 100%;
+                        height: auto;
+                        
+                        &.partnerBox {
+                            @include partnerBox;
+                            margin-bottom: 20px;
+
+                            ul {
+
+                                li {
+
+                                    div {
+
+                                        .gh {
+                                            width: 78px;
+                                            height: 54px;
+                                        }
+
+                                        .bng {
+                                            width: 113px;
+                                            height: 33px;
+                                        }
+
+                                        .tpg {
+                                            width: 105px;
+                                            height: 34px;
+                                        }
+
+                                        .ifun {
+                                            width: 121px;
+                                            height: 35px;
+                                        }
+
+                                        .png {
+                                            width: 111px;
+                                            height: 32px;
+                                        }
+
+                                        .rsg {
+                                            width: 80px;
+                                            height: 46px;
+                                        }
+
+                                        .jili {
+                                            width: 95px;
+                                            height: 38px;
+                                        }
+
+                                        .sp {
+                                            width: 112px;
+                                            height: 33px;
+                                        }
+
+                                        .ag {
+                                            width: 106px;
+                                            height: 34px;
+                                        }
+
+                                        .red {
+                                            width: 90px;
+                                            height: 56px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.gameBox {
+                            display: none;
+                            grid-template-columns: repeat(4,1fr);
+                            gap: 10px;
+
+                            &.display {
+                                display: grid;
+                            }
+
+                            div {
+                                width: auto;
+                                height: auto;
+                                cursor: pointer;
+
+                                p {
+                                    color: $mainFont_1;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    padding-top: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

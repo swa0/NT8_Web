@@ -1,0 +1,700 @@
+//背景
+.bg {
+    background: url('../images/bg.jpg') no-repeat top center;
+}
+
+//註冊
+header .login_ic {
+    background: url('../images/icon/login_ic.png') no-repeat center;
+    background-size: contain;
+}
+header .signup_ic {
+    background: url('../images/icon/signupIC.png') no-repeat center;
+    background-size: contain;
+}
+//忘記密碼
+header .forget_ic {
+    background: url('../images/icon/question.png') no-repeat center;
+    background-size: contain;
+}
+//header 登入後下選單旋轉圖
+header .transferInfo .money i {
+    background: url('../images/icon/svg/loading_g.svg') no-repeat;
+    background-size: 100%;
+}
+//headerNav
+header .gameNav .nav_ic {
+    background: url("../images/icon/headerNav_ic.png") no-repeat;
+    background-size: 900%;
+}
+//header登入後按鈕
+header .user.alLogin .money_ic {
+    background: url('../images/icon/money_ic.png') no-repeat;
+    background-size: 300%;
+}
+header .user.alLogin .logout_ic {
+    background: url('../images/icon/logout_ic.png') no-repeat center;
+    background-size: contain;
+}
+
+//下拉選單 topGameList arrow
+.topGameList .prev,.topGameList .next {
+    background: url('../images/icon/svg/arrow_g.svg') no-repeat;
+    background-size: 100%;
+}
+
+//側邊 sideBar img
+.download i {
+    background: url('../images/icon/download.png') no-repeat center;
+    background-size: contain;
+}
+.rightSide .line_ic {
+    background: url('../images/icon/sideBar_line.png') no-repeat center;
+    background-size: contain;
+}
+.rightSide .service_ic {
+    background: url('../images/icon/sideBar_service.png') no-repeat center;
+    background-size: contain;
+}
+.goTop_ic {
+    background: url('../images/icon/goTop_ic.png') no-repeat center;
+    background-size: contain;
+}
+
+//marquee
+.marqueeArea .marquee_ic {
+    background: url('../images/icon/marquee_ic.png') no-repeat center;
+    background-size: contain;
+}
+.marqueeArea .marquee_base {
+    background: url('../images/icon/marquee_base.png') no-repeat center;
+    background-size: contain;
+}
+
+//inner
+.innerPage {
+    background: url('../images/innerBG.png');
+    background-size: cover;
+}
+
+.innerSide .userInfo ul li p span {
+    background: url('../images/icon/inner_quickBtn.png') no-repeat;
+    background-size: 400%;
+}
+
+//typeList
+.typeList .type_ic {
+    background: url("../images/icon/headerNav_ic.png") no-repeat;
+    background-size: 900%;
+}
+.typeList .partnerBox .partnerImg.gh {
+    background: url('../images/partner/typeList/gh.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.gh {
+    background: url('../images/partner/typeList/gh_hover.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox .partnerImg.bng {
+    background: url('../images/partner/typeList/bng.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.bng {
+    background: url('../images/partner/typeList/bng_hover.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox .partnerImg.tpg {
+    background: url('../images/partner/typeList/tpg.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.tpg {
+    background: url('../images/partner/typeList/tpg_hover.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox .partnerImg.ifun {
+    background: url('../images/partner/typeList/ifun.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.ifun {
+    background: url('../images/partner/typeList/ifun_hover.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox .partnerImg.png {
+    background: url('../images/partner/typeList/png.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.png {
+    background: url('../images/partner/typeList/png_hover.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox .partnerImg.rsg {
+    background: url('../images/partner/typeList/rsg.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.rsg {
+    background: url('../images/partner/typeList/rsg_hover.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox .partnerImg.jili {
+    background: url('../images/partner/typeList/jili.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.jili {
+    background: url('../images/partner/typeList/jili_hover.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox .partnerImg.sp {
+    background: url('../images/partner/typeList/sp.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.sp {
+    background: url('../images/partner/typeList/sp_hover.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox .partnerImg.ag {
+    background: url('../images/partner/typeList/ag.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.ag {
+    background: url('../images/partner/typeList/ag_hover.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox .partnerImg.red {
+    background: url('../images/partner/typeList/red.png') no-repeat center;
+    background-size: contain;
+}
+.typeList .partnerBox div:hover .partnerImg.red {
+    background: url('../images/partner/typeList/red_hover.png') no-repeat center;
+    background-size: contain;
+}
+
+//footer
+
+
+footer .footerList {
+    background: url('../images/footerBG.jpg') no-repeat top center;
+    background-size: cover;
+}
+
+//jumpWindow ic
+.jumpWindow .close_ic {
+    background: url('../images/icon/svg/close_w.svg') no-repeat;
+    background-size: 100%;
+}
+.jumpWindow.betWindow .trans_arrow {
+    background: url('../images/icon/svg/transfer_arrow.svg') no-repeat;
+    background-size: 100%;
+}
+//loading
+.jumpWindow.loading .content div {
+    background: url('../images/icon/svg/loading_b.svg') no-repeat;
+    background-size: 100%;
+}
+
+//gameWrap background
+.gameWrap {
+    background: url('../images/gameBg.png') no-repeat center;
+    background-size: cover;
+}
+.gameWrap.inner {
+    background: url('../images/gameInnerBg.png') no-repeat center;
+    background-size: cover;
+}
+.gameWrap .infoBox {
+    background: url('../images/gameinfo_BG.png') no-repeat center;
+    background-size: cover;
+}
+.gameWrap .infoBox .deco i.live_ic {
+    background: url('../images/icon/live_icon.png') no-repeat center;
+    background-size: contain;
+}
+
+//.slotCenter .slotBody .nav .serach
+.slotBody .search_ic {
+    background: url('../images/icon/svg/search.svg') no-repeat top center;
+    background-size: cover;
+}
+//.pfName按鈕arrow
+.slotBody .pfName button i {
+    background: url('../images/icon/svg/arrow_w.svg') no-repeat;
+    background-size: 100%;
+}
+//.gameList .love
+.slotBody .gameList .textBox .love {
+    background: url('../images/icon/svg/love1.svg') no-repeat;
+    background-size: 100%;
+}
+.slotBody .gameList .textBox .love.active {
+    background: url('../images/icon/svg/love2.svg') no-repeat;
+    background-size: 100%;
+}
+//evevtBody 
+.eventWrap {
+    background: url('../images/eventBody_bg.png') no-repeat top center;
+    background-size: 100%;
+} 
+//evevtTitle
+.eventTitle {
+    background: url('../images/eventTitle_bg.png') no-repeat;
+    background-size: cover;
+}
+.eventTitle p span {
+    background: url('../images/icon/eventTitle_deco.png') no-repeat;
+    background-size: cover;
+}
+//eventBody .side li i
+.eventBody .event_ic {
+    background: url('../images/icon/svg/entire.svg') no-repeat;
+    background-size: 100%;
+}
+//eventDetail .back
+.eventDetail .back_ic {
+    background: url('../images/icon/svg/return.svg') no-repeat;
+    background-size: 100%;
+}
+
+//innerSdie .innerNav li i
+.innerNav .user_ic {
+    background: url('../images/icon/leftnav_member.png') no-repeat;
+    background-size: 100%;
+}
+.innerNav .invite_ic {
+    background: url('../images/icon/leftnav_invite.png') no-repeat;
+    background-size: 100%;
+}
+.innerNav .vip_ic {
+    background: url('../images/icon//leftnav_vip.png') no-repeat;
+    background-size: 100%;
+}
+.innerNav .wallet_ic {
+    background: url('../images/icon/leftnav_wallet.png') no-repeat;
+    background-size: 100%;
+}
+.innerNav .card_ic {
+    background: url('../images/icon/leftnav_card.png') no-repeat;
+    background-size: 100%;
+}
+.innerNav .dealRecord_ic {
+    background: url('../images/icon/leftnav_ealRecord.png') no-repeat;
+    background-size: 100%;
+}
+.innerNav .betRecord_ic {
+    background: url('../images/icon/leftnav_betRecord.png') no-repeat;
+    background-size: 100%;
+}
+.innerNav .event_ic {
+    background: url('../images/icon/leftnav_event.png') no-repeat;
+    background-size: 100%;
+}
+.innerNav .mail_ic {
+    background: url('../images/icon/leftnav_mail.png') no-repeat;
+    background-size: 100%;
+}
+.innerNav .dividend_ic {
+    background: url('../images/icon/leftnav_dividend.png');
+    background-size: 100%;
+}
+.innerNav .maintain_ic {
+    background: url('../images/icon/leftnav_maintain.png');
+    background-size: 100%;
+}
+
+//innerTop BG
+.memberWrap .top, 
+.depositWrap .top,
+.mailWrap .top {
+    background: url('../images/innerTop.png') no-repeat;
+    background-size: 100%;
+}
+
+.withdrawalMiddle  .top {
+    background: url('../images/innerTop_withdraw.png');
+    background-size: 100%;
+}
+
+
+//.memberWrap .level i
+.memberWrap .level .data_ic {
+    background: url('../images/icon/svg/data.svg') no-repeat center;
+    background-size: 65%;
+}
+.memberWrap .level .phone_ic {
+    background: url('../images/icon/svg/phone.svg') no-repeat center;
+    background-size: 65%;
+}
+.memberWrap .level .bankcard_ic {
+    background: url('../images/icon/svg/bankcard.svg') no-repeat center;
+    background-size: 65%;
+}
+.memberWrap .level .mail_ic {
+    background: url('../images/icon/svg/mail_w.svg') no-repeat center;
+    background-size: 65%;
+}
+
+//.vipWrap .medal
+.vipHeader .medal {
+    background: url('../images/icon/medal.png') no-repeat;
+    background-size: 100%;
+}
+//.vipWrap .detailTitle .back
+.vipWrap .detailTitle .back {
+    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
+    background-size: 100%;
+}
+//.vipWrap .detailCardBox .prev,.next
+.vipWrap .detailCardBox .prev,.vipWrap .detailCardBox .next {
+    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
+    background-size: 100%;
+}
+//.vipWrap vip卡樣式
+.vipWrap .detailCardBox .cardBg {
+    background: url('../images/vip_card.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg .medal {
+    background: url('../images/icon/medal.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v1 {
+    background: url('../images/vip_card_2.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v1 .medal {
+    background: url('../images/icon/medal_2.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v2 {
+    background: url('../images/vip_card_3.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v2 .medal {
+    background: url('../images/icon/medal_3.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v3 {
+    background: url('../images/vip_card_4.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v3 .medal {
+    background: url('../images/icon/medal_4.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v4 {
+    background: url('../images/vip_card_5.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v4 .medal {
+    background: url('../images/icon/medal_5.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v5 {
+    background: url('../images/vip_card_6.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v5 .medal {
+    background: url('../images/icon/medal_6.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v6 {
+    background: url('../images/vip_card_7.png') no-repeat;
+    background-size: 100%;
+}
+.vipWrap .detailCardBox .cardBg.v6 .medal {
+    background: url('../images/icon/medal_7.png') no-repeat;
+    background-size: 100%;
+}
+
+//dealWrap
+.dealWrap .waterBox .arrow_ic {
+    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
+    background-size: 100%;
+}
+
+//.cardMiddle .addCard_ic
+.cardMiddle .card .addCard_ic {
+    background: url('../images/icon/svg/addCard.svg') no-repeat;
+    background-size: 100%;
+}
+
+//doublearrow
+.depositWrap .top i.prev,
+.depositWrap .top i.next,
+.rightSide .smallBoard .arrow,
+.betWrap .fakeTable ul li .tableBox .more span {
+    background: url('../images/icon/doubleArrow.png') no-repeat;
+    background-size: 100%;
+}
+
+//.mailWrap.innerMode .title .arrow_ic
+.mailWrap.innerMode .title .arrow_ic {
+    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
+    background-size: 100%;
+}
+//.mailWrap.innerMode .msgTitle prev,next
+.mailWrap.innerMode .msgTitle .prev {
+    background: url('../images/icon/svg/arrow_g.svg') no-repeat center;
+    background-size: 11px 19px;
+}
+
+.mailWrap.innerMode .msgTitle .next {
+    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
+    background-size: 100%;
+}
+
+//.betWrap .fakeTalbe .arrow_ic
+.betWrap .fakeTable .arrow_ic {
+    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
+    background-size: 100%;
+}
+
+//.depositWrap .top button i
+.depositWrap .top .title button i {
+    background: url('../images/icon/svg/problem.svg') no-repeat;
+    background-size: 100%;
+}
+//.depositWrap .list i
+.depositWrap .list .card_ic {
+    background: url('../images/icon/svg/card.svg') no-repeat;
+    background-size: 100%;
+}
+.depositWrap .list .atm_ic {
+    background: url('../images/icon/svg/atm.svg') no-repeat;
+    background-size: 100%;
+}
+.depositWrap .list .shop_ic {
+    background: url('../images/icon/svg/shop.svg') no-repeat;
+    background-size: 100%;
+}
+.depositWrap .list .prev,.depositWrap .list .next {
+    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
+    background-size: 100%;
+}
+
+//.withdrawalWrap .rightSide .trans_arrow
+.rightSide .trans_arrow {
+    background: url('../images/icon/svg/transfer_arrow.svg') no-repeat;
+    background-size: 100%;
+}
+
+//.withdrawalWrap .smallTitle reset_ic
+.withdrawalWrap .smallTitle .reset_ic {
+    background: url('../images/icon/svg/refresh.svg') no-repeat;
+    background-size: 100%;
+}
+//withdrawalWrap .platformBox .db_arrow
+.withdrawalWrap .platformBox .db_arrow {
+    background: url('../images/icon/svg/unfold.svg') no-repeat;
+    background-size: 100%;
+}
+
+//transferWrap .walletTitle .reset_ic
+.transferWrap .walletTitle .reset_ic {
+    background: url('../images/icon/svg/refresh.svg') no-repeat;
+    background-size: 100%;
+}
+.transferWrap .platform .db_arrow {
+    background: url('../images/icon/svg/unfold.svg') no-repeat;
+    background-size: 100%;
+}
+.transferWrap .platformBox .trans_ic {
+    background: url('../images/icon/svg/transfer_arrow.svg') no-repeat;
+    background-size: 100%;
+}
+
+//help_bg
+.helpPage {
+    background: url('../images/help_bg.png') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+//helpPage .nav i
+.helpPage .nav .arrow_ic {
+    background: url('../images/icon/svg/arrow_r.svg') no-repeat;
+    background-size: 100%;
+}
+.helpPage .nav .bulb {
+    background: url('../images/icon/svg/bulb.svg') no-repeat;
+    background-size: 100%;
+}
+.helpPage .nav .problem {
+    background: url('../images/icon/svg/helpProblem.svg') no-repeat;
+    background-size: 100%;
+}
+.helpPage .nav .aboutUs {
+    background: url('../images/icon/svg/aboutus.svg') no-repeat;
+    background-size: 100%;
+}
+.helpPage .nav .app {
+    background: url(../images/icon/download.png) no-repeat;
+    background-size: contain;
+}
+//helpPage .teachList arrow_ic
+.helpPage .teachList .arrow_ic {
+    background: url('../images/icon/svg/arrow_b.svg') no-repeat;
+    background-size: 100%;
+}
+//helpPage .img
+.helpPage .img.online01 {
+    background: url('../images/help/online01.png') no-repeat;
+    background-size: 100%;
+}
+.helpPage .img.online02 {
+    background: url('../images/help/online02.png') no-repeat;
+    background-size: 100%;
+}
+.helpPage .img.online03 {
+    background: url('../images/help/online03.png') no-repeat;
+    background-size: 100%;
+}
+.helpPage .img.online04 {
+    background: url('../images/help/online04.png') no-repeat;
+    background-size: 100%;
+}
+.helpPage .img.online05 {
+    background: url('../images/help/online05.png') no-repeat;
+    background-size: 100%;
+}
+
+//register
+.registerWrap {
+    background: url('../images/register_background.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.registerWrap .person_ic {
+    background: url('../images/icon/register_icon.png') no-repeat;
+    background-size: 100%;
+}
+.registerWrap .eye {
+    background: url('../images/icon/svg/eye.svg') no-repeat;
+    background-size: 100%;
+}
+.registerWrap .left {
+    background: url('../images/register_background2.png') no-repeat;
+    background-size: cover;
+}
+
+//invite
+.inviteWrap .right div {
+    background: url('../images/icon/qr.png') no-repeat;
+    background-size: 100%;
+}
+.inviteWrap .mainImg {
+    background: url('../images/invite.jpg') no-repeat;
+    background-size: 100%;
+}
+
+
+////////img↓↓↓↓↓↓↓↓↓
+
+
+//header 下拉選單
+header .topGameList div {
+    width: 220px;
+    height: 184px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+//logo
+header .logo {
+    width: 152px;
+    height: 61px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+//banner
+.single-item img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+//入口頁中央遊戲enter .mainWrap .img
+.mainWrap .typeList .gameBox img {
+    width: 100%;
+    object-fit: contain;
+}
+
+//gameWrap img
+.gameWrap .mainImg {
+    width: 675px;
+    height: 732px;
+    margin-top: 120px;
+}
+.gameWrap .btnBox img {
+    width: 189px;
+    height: 185px;
+    object-fit: cover;
+    object-position: top;
+
+    &:hover,&:active,&.active {
+        object-position: bottom;
+    }
+}
+
+//pfName 廠商icon
+.pfName img {
+    width: auto;
+    height: 85%;
+}
+
+//.slotBody .gameList img
+.slotBody .gameList img {
+    width: 100%;
+    height: 165px;
+}
+
+//.eventList .eventBox img
+.eventBox {
+    
+    .imgBox {
+        width: 100%;
+        height: 250px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+//.eventDetail .imgBox img
+// .eventDetail {
+
+//     .imgBox {
+//         width: 100%;
+//         height: 267px;
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//         }
+//     }
+// }
+
+//.jumpWindow .checkEvent img
+.checkEvent {
+
+    .imgBox {
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+//register .logo
+.registerWrap .left img {
+    width: 250px;
+}
+
+//右側小活動中心
+.rightSide .smallBoard img {
+    width: 92%;
+}

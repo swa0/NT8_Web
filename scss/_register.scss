@@ -1,0 +1,140 @@
+.registerWrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bigBox {
+        display: flex;
+        border-radius: 17px;
+        overflow: hidden;
+        box-shadow: 0 5px 10px -5px $mainShadow_1;
+
+        .left {
+            width: 432px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 432px;
+            padding: 32px 0 37px;
+            background: $mainBG_3;
+
+            .title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                font-size: 25px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                color: $mainFont_1;
+
+                .person_ic {
+                    width: 44px;
+                    height: 44px;
+                    margin-right: 15px;
+                }
+            }
+
+            label {
+                position: relative;
+                margin-bottom: 19px;
+                display: flex;
+                justify-content: center;
+
+                input {
+                    width: 332px;
+                    height: 41px;
+                    @include mainInput;
+                }
+
+                .err {
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: $remind;
+                }
+
+                .eye {
+                    display: block;
+                    width: 23px;
+                    height: 17px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 20px;
+                    cursor: pointer;
+                }
+
+                button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 86px;
+                    height: 29px;
+                    right: 11px;
+                    @include borderBtn;
+                }
+            }
+
+            .tips {
+                width: 332px;
+                font-size: 12px;
+                font-weight: bold;
+                color: $remind;
+                text-align: left;
+            }
+
+            .checkBox {
+                width: 332px;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 23px 0 32px;
+
+                input {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $mainFont_1;
+
+                    span {
+                        color: $link;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .checkBtn {
+                width: 332px;
+                height: 41px;
+                @include main_longBtn;
+
+                &:last-child {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
