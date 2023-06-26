@@ -641,7 +641,7 @@ footer .footerList {
   background-size: 100%;
 }
 
-.registerWrap .left {
+.registerWrap .top {
   background: url("../images/register_background2.png") no-repeat;
   background-size: cover;
 }
@@ -9116,27 +9116,7 @@ html body .registerWrap {
           justify-content: center;
 }
 html body .registerWrap .bigBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 17px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
-}
-html body .registerWrap .bigBox .left {
-  width: 432px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-html body .registerWrap .bigBox .right {
+  width: 865px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9144,38 +9124,65 @@ html body .registerWrap .bigBox .right {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 432px;
-  padding: 32px 0 37px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(6%, #f3eddd), to(#fffffe));
-  background: linear-gradient(to top, #f3eddd 6%, #fffffe 100%);
+  border-radius: 17px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
 }
-html body .registerWrap .bigBox .right .title {
+html body .registerWrap .bigBox .top {
+  width: 100%;
+  height: 93px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+}
+html body .registerWrap .bigBox .top .registerLogo {
+  width: 88px;
+  height: 41px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body .registerWrap .bigBox .top .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
   height: auto;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #3a4644;
+  color: #ffffff;
 }
-html body .registerWrap .bigBox .right .title .person_ic {
+html body .registerWrap .bigBox .top .title .person_ic {
   width: 44px;
   height: 44px;
   margin-right: 15px;
 }
-html body .registerWrap .bigBox .right label {
+html body .registerWrap .bigBox .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 32px 80px 37px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(6%, #f3eddd), to(#fffffe));
+  background: linear-gradient(to top, #f3eddd 6%, #fffffe 100%);
+}
+html body .registerWrap .bigBox .bottom label {
   position: relative;
   margin-bottom: 19px;
   display: -webkit-box;
@@ -9185,7 +9192,7 @@ html body .registerWrap .bigBox .right label {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body .registerWrap .bigBox .right label input {
+html body .registerWrap .bigBox .bottom label input {
   width: 332px;
   height: 41px;
   background: #ffffff;
@@ -9198,25 +9205,25 @@ html body .registerWrap .bigBox .right label input {
           box-sizing: border-box;
   padding: 20px;
 }
-html body .registerWrap .bigBox .right label input::-webkit-input-placeholder {
+html body .registerWrap .bigBox .bottom label input::-webkit-input-placeholder {
   color: #848484;
 }
-html body .registerWrap .bigBox .right label input::-moz-placeholder {
+html body .registerWrap .bigBox .bottom label input::-moz-placeholder {
   color: #848484;
 }
-html body .registerWrap .bigBox .right label input:-ms-input-placeholder {
+html body .registerWrap .bigBox .bottom label input:-ms-input-placeholder {
   color: #848484;
 }
-html body .registerWrap .bigBox .right label input::-ms-input-placeholder {
+html body .registerWrap .bigBox .bottom label input::-ms-input-placeholder {
   color: #848484;
 }
-html body .registerWrap .bigBox .right label input::placeholder {
+html body .registerWrap .bigBox .bottom label input::placeholder {
   color: #848484;
 }
-html body .registerWrap .bigBox .right label input:disabled {
+html body .registerWrap .bigBox .bottom label input:disabled {
   background: #e7e7e7;
 }
-html body .registerWrap .bigBox .right label .err {
+html body .registerWrap .bigBox .bottom label .err {
   position: absolute;
   bottom: -15px;
   left: 0;
@@ -9224,7 +9231,7 @@ html body .registerWrap .bigBox .right label .err {
   font-weight: bold;
   color: #f81041;
 }
-html body .registerWrap .bigBox .right label .eye {
+html body .registerWrap .bigBox .bottom label .eye {
   display: block;
   width: 23px;
   height: 17px;
@@ -9235,7 +9242,7 @@ html body .registerWrap .bigBox .right label .eye {
   right: 20px;
   cursor: pointer;
 }
-html body .registerWrap .bigBox .right label button {
+html body .registerWrap .bigBox .bottom label button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -9250,18 +9257,18 @@ html body .registerWrap .bigBox .right label button {
   font-weight: bold;
   border-radius: 3px;
 }
-html body .registerWrap .bigBox .right label button:hover, html body .registerWrap .bigBox .right label button:active, html body .registerWrap .bigBox .right label button.active {
+html body .registerWrap .bigBox .bottom label button:hover, html body .registerWrap .bigBox .bottom label button:active, html body .registerWrap .bigBox .bottom label button.active {
   background: #c09a41;
   color: #ffffff;
 }
-html body .registerWrap .bigBox .right .tips {
+html body .registerWrap .bigBox .bottom .tips {
   width: 332px;
   font-size: 12px;
   font-weight: bold;
   color: #f81041;
   text-align: left;
 }
-html body .registerWrap .bigBox .right .checkBox {
+html body .registerWrap .bigBox .bottom .checkBox {
   width: 332px;
   height: auto;
   display: -webkit-box;
@@ -9275,22 +9282,22 @@ html body .registerWrap .bigBox .right .checkBox {
           justify-content: center;
   margin: 23px 0 32px;
 }
-html body .registerWrap .bigBox .right .checkBox input {
+html body .registerWrap .bigBox .bottom .checkBox input {
   width: 16px;
   height: 16px;
   margin-right: 10px;
 }
-html body .registerWrap .bigBox .right .checkBox p {
+html body .registerWrap .bigBox .bottom .checkBox p {
   font-size: 16px;
   font-weight: bold;
   color: #3a4644;
 }
-html body .registerWrap .bigBox .right .checkBox p span {
+html body .registerWrap .bigBox .bottom .checkBox p span {
   color: #177af4;
   text-decoration: underline;
   cursor: pointer;
 }
-html body .registerWrap .bigBox .right .checkBtn {
+html body .registerWrap .bigBox .bottom .checkBtn {
   width: 332px;
   height: 41px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(12%, #eccf89), color-stop(33%, #d3b26c), color-stop(79%, #fff1bb), to(#e2c47d));
@@ -9302,12 +9309,12 @@ html body .registerWrap .bigBox .right .checkBtn {
   border-radius: 3px;
   border: 1px solid #957632;
 }
-html body .registerWrap .bigBox .right .checkBtn:hover, html body .registerWrap .bigBox .right .checkBtn:active, html body .registerWrap .bigBox .right .checkBtn.active {
+html body .registerWrap .bigBox .bottom .checkBtn:hover, html body .registerWrap .bigBox .bottom .checkBtn:active, html body .registerWrap .bigBox .bottom .checkBtn.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#eccf89), to(#c1a15b));
   background: linear-gradient(to top, #eccf89 0%, #c1a15b 100%);
   color: #ffffff;
 }
-html body .registerWrap .bigBox .right .checkBtn:last-child {
+html body .registerWrap .bigBox .bottom .checkBtn:last-child {
   margin-top: 10px;
 }
 html body main {

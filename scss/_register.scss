@@ -9,37 +9,36 @@
     justify-content: center;
 
     .bigBox {
+        width: 865px;
         display: flex;
+        flex-direction: column;
         border-radius: 17px;
         overflow: hidden;
         box-shadow: 0 5px 10px -5px $mainShadow_1;
 
-        .left {
-            width: 432px;
+        .top {
+            width: 100%;
+            height: 93px;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
 
-        .right {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 432px;
-            padding: 32px 0 37px;
-            background: $mainBG_3;
+            .registerLogo {
+                width: 88px;
+                height: 41px;
+                object-fit: contain;
+            }
 
             .title {
                 display: flex;
                 align-items: center;
-                margin-bottom: 25px;
                 justify-content: center;
-                width: 100%;
+                width: auto;
                 height: auto;
-                font-size: 25px;
+                font-size: 35px;
                 font-weight: bold;
                 letter-spacing: 2px;
-                color: $mainFont_1;
+                color: $mainFont_2;
 
                 .person_ic {
                     width: 44px;
@@ -47,6 +46,14 @@
                     margin-right: 15px;
                 }
             }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 32px 80px 37px;
+            background: $mainBG_3;
 
             label {
                 position: relative;
