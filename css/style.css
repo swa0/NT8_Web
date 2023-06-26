@@ -646,6 +646,11 @@ footer .footerList {
   background-size: cover;
 }
 
+.registerWrap .platformChs li span {
+  background: url("../images/icon/lineWechat.png") no-repeat;
+  background-size: 100%;
+}
+
 .inviteWrap .right div {
   background: url("../images/icon/qr.png") no-repeat;
   background-size: 100%;
@@ -9223,6 +9228,9 @@ html body .registerWrap .bigBox .bottom label input::placeholder {
 html body .registerWrap .bigBox .bottom label input:disabled {
   background: #e7e7e7;
 }
+html body .registerWrap .bigBox .bottom label input.linebar {
+  padding-left: 70px;
+}
 html body .registerWrap .bigBox .bottom label .err {
   position: absolute;
   bottom: -15px;
@@ -9260,6 +9268,63 @@ html body .registerWrap .bigBox .bottom label button {
 html body .registerWrap .bigBox .bottom label button:hover, html body .registerWrap .bigBox .bottom label button:active, html body .registerWrap .bigBox .bottom label button.active {
   background: #c09a41;
   color: #ffffff;
+}
+html body .registerWrap .bigBox .bottom label .platformChs {
+  position: absolute;
+  width: 58px;
+  height: 41px;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+html body .registerWrap .bigBox .bottom label .platformChs::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background: #4d4d4d;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+  transform: rotate(45deg) translateY(-50%);
+  top: 50%;
+  right: 10px;
+  z-index: 2;
+}
+html body .registerWrap .bigBox .bottom label .platformChs::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background: #4d4d4d;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+  transform: rotate(-45deg) translateY(-50%);
+  top: 50%;
+  right: 10px;
+  z-index: 2;
+}
+html body .registerWrap .bigBox .bottom label .platformChs li {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #adadad;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #d9d9d9), color-stop(50%, #ededed), to(#fff));
+  background: linear-gradient(0deg, #d9d9d9 0, #ededed 50%, #fff);
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+html body .registerWrap .bigBox .bottom label .platformChs li.display {
+  display: block;
+}
+html body .registerWrap .bigBox .bottom label .platformChs li span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 27px;
+  height: 27px;
 }
 html body .registerWrap .bigBox .bottom .tips {
   width: 332px;
@@ -9314,8 +9379,8 @@ html body .registerWrap .bigBox .bottom .checkBtn:hover, html body .registerWrap
   background: linear-gradient(to top, #eccf89 0%, #c1a15b 100%);
   color: #ffffff;
 }
-html body .registerWrap .bigBox .bottom .checkBtn:last-child {
-  margin-top: 10px;
+html body .registerWrap .bigBox .bottom .checkBtn.getIn {
+  margin-top: 58px;
 }
 html body main {
   padding-top: 120px;

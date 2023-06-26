@@ -65,6 +65,10 @@
                     width: 332px;
                     height: 41px;
                     @include mainInput;
+
+                    &.linebar {
+                        padding-left: 70px;
+                    }
                 }
 
                 .err {
@@ -95,6 +99,69 @@
                     height: 29px;
                     right: 11px;
                     @include borderBtn;
+                }
+
+                .platformChs {
+                    position: absolute;
+                    width: 58px;
+                    height: 41px;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 2;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 2px;
+                        height: 5px;
+                        background: $choose_Word;
+                        -webkit-transform: rotate(45deg) translateY(-50%);
+                        transform: rotate(45deg) translateY(-50%);
+                        top: 50%;
+                        right: 10px;
+                        z-index: 2;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 2px;
+                        height: 5px;
+                        background: $choose_Word;
+                        -webkit-transform: rotate(-45deg) translateY(-50%);
+                        transform: rotate(-45deg) translateY(-50%);
+                        top: 50%;
+                        right: 10px;
+                        z-index: 2;
+                    }
+
+                    li {
+                        width: 100%;
+                        height: 100%;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        border: 1px solid #adadad;
+                        background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #d9d9d9), color-stop(50%, #ededed), to(#fff));
+                        background: linear-gradient(0deg, #d9d9d9 0, #ededed 50%, #fff);
+                        border-radius: 5px;
+                        display: none;
+                        cursor: pointer;
+
+                        &.display {
+                            display: block;
+                        }
+
+                        span {
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 8px;
+                            -webkit-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            width: 27px;
+                            height: 27px;
+                        }
+                    }
                 }
             }
 
@@ -138,8 +205,9 @@
                 height: 41px;
                 @include main_longBtn;
 
-                &:last-child {
-                    margin-top: 10px;
+
+                &.getIn {
+                    margin-top: 58px;
                 }
             }
         }
