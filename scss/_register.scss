@@ -23,10 +23,17 @@
             align-items: center;
             justify-content: center;
 
+            .f7Logo {
+                width: 46px;
+                height: 46px;
+                margin-right: 15px;
+            }
+
             .registerLogo {
                 width: 88px;
                 height: 41px;
                 object-fit: contain;
+                margin-right: 30px;
             }
 
             .title {
@@ -39,11 +46,11 @@
                 font-weight: bold;
                 letter-spacing: 2px;
                 color: $mainFont_2;
-
+               
                 .person_ic {
                     width: 44px;
                     height: 44px;
-                    margin-right: 15px;
+                    margin-right: 20px;
                 }
             }
         }
@@ -67,7 +74,7 @@
                     @include mainInput;
 
                     &.linebar {
-                        padding-left: 70px;
+                        padding-left: 55px;
                     }
                 }
 
@@ -102,36 +109,12 @@
                 }
 
                 .platformChs {
-                    width: 58px;
+                    width: 45px;
                     height: 41px;
                     position: absolute;
                     left: 0px;
                     top: 0px;
                     z-index: 2;
-
-                    &::before {
-                        content: "";
-                        width: 2px;
-                        height: 5px;
-                        background: $choose_Word;
-                        transform: rotate(45deg) translateY(-50%);
-                        position: absolute;
-                        top: 50%;
-                        right: 10px;
-                        z-index: 2;
-                    }
-
-                    &::after {
-                        content: "";
-                        width: 2px;
-                        height: 5px;
-                        background: $choose_Word;
-                        transform: rotate(-45deg) translateY(-50%);
-                        position: absolute;
-                        top: 50%;
-                        right: 10px;
-                        z-index: 2;
-                    }
 
                     li {
                         width: 100%;
@@ -141,7 +124,7 @@
                         background: linear-gradient(0deg, #d9d9d9 0, #ededed 50%, #fff);
                         border-radius: 5px;
                         display: none;
-                        cursor: pointer;
+                        // cursor: pointer;
 
                         &.display {
                             display: block;

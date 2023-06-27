@@ -631,6 +631,11 @@ footer .footerList {
   background-attachment: fixed;
 }
 
+.registerWrap .top .f7Logo {
+  background: url("../images/icon/f7Logo_gold.png") no-repeat;
+  background-size: contain;
+}
+
 .registerWrap .person_ic {
   background: url("../images/icon/register_icon.png") no-repeat;
   background-size: 100%;
@@ -9147,11 +9152,17 @@ html body .registerWrap .bigBox .top {
       -ms-flex-pack: center;
           justify-content: center;
 }
+html body .registerWrap .bigBox .top .f7Logo {
+  width: 46px;
+  height: 46px;
+  margin-right: 15px;
+}
 html body .registerWrap .bigBox .top .registerLogo {
   width: 88px;
   height: 41px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-right: 30px;
 }
 html body .registerWrap .bigBox .top .title {
   display: -webkit-box;
@@ -9173,7 +9184,7 @@ html body .registerWrap .bigBox .top .title {
 html body .registerWrap .bigBox .top .title .person_ic {
   width: 44px;
   height: 44px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 html body .registerWrap .bigBox .bottom {
   display: -webkit-box;
@@ -9229,7 +9240,7 @@ html body .registerWrap .bigBox .bottom label input:disabled {
   background: #e7e7e7;
 }
 html body .registerWrap .bigBox .bottom label input.linebar {
-  padding-left: 70px;
+  padding-left: 55px;
 }
 html body .registerWrap .bigBox .bottom label .err {
   position: absolute;
@@ -9270,35 +9281,11 @@ html body .registerWrap .bigBox .bottom label button:hover, html body .registerW
   color: #ffffff;
 }
 html body .registerWrap .bigBox .bottom label .platformChs {
-  width: 58px;
+  width: 45px;
   height: 41px;
   position: absolute;
   left: 0px;
   top: 0px;
-  z-index: 2;
-}
-html body .registerWrap .bigBox .bottom label .platformChs::before {
-  content: "";
-  width: 2px;
-  height: 5px;
-  background: #4d4d4d;
-  -webkit-transform: rotate(45deg) translateY(-50%);
-          transform: rotate(45deg) translateY(-50%);
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  z-index: 2;
-}
-html body .registerWrap .bigBox .bottom label .platformChs::after {
-  content: "";
-  width: 2px;
-  height: 5px;
-  background: #4d4d4d;
-  -webkit-transform: rotate(-45deg) translateY(-50%);
-          transform: rotate(-45deg) translateY(-50%);
-  position: absolute;
-  top: 50%;
-  right: 10px;
   z-index: 2;
 }
 html body .registerWrap .bigBox .bottom label .platformChs li {
@@ -9311,7 +9298,6 @@ html body .registerWrap .bigBox .bottom label .platformChs li {
   background: linear-gradient(0deg, #d9d9d9 0, #ededed 50%, #fff);
   border-radius: 5px;
   display: none;
-  cursor: pointer;
 }
 html body .registerWrap .bigBox .bottom label .platformChs li.display {
   display: block;
